@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Federico Ken - AI Strategy & Entrepreneurship</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(45deg, #3B82F6, #10B981);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background: linear-gradient(45deg, #3B82F6, #10B981);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .project-card {
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white bg-opacity-90 dark:bg-gray-800 shadow-lg z-50 backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="text-xl font-bold gradient-text">FK</a>
+                </div>
+                <div class="flex items-center space-x-8">
+                    <a href="#about" class="nav-link text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">About</a>
+                    <a href="#projects" class="nav-link text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">Projects</a>
+                    <a href="#knowledge" class="nav-link text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">Knowledge Base</a>
+                    <a href="#contact" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">
+                <span class="gradient-text">Building at the Intersection</span>
+                <br>
+                of AI & Business
+            </h1>
+            <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto mb-8">
+                Strategy leader and entrepreneur exploring the frontiers of AI implementation. 
+                Former BCG consultant and WeWork LatAm lead.
+            </p>
+            <div class="flex justify-center space-x-4">
+                <a href="#about" class="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-lg transition-colors">Read My Story</a>
+                <a href="#knowledge" class="border border-blue-500 text-blue-500 hover:bg-blue-50 px-8 py-3 rounded-lg transition-colors">Knowledge Base</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white dark:bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-12 text-center gradient-text">Featured Projects</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="project-card bg-gray-50 dark:bg-gray-700 rounded-xl p-6 shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4">grupAI</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                        AI-powered automation for WhatsApp business communications. 
+                        Led development from ideation to market validation.
+                    </p>
+                    <a href="#" class="text-blue-500 hover:text-blue-600">Read Case Study →</a>
+                </div>
+                <div class="project-card bg-gray-50 dark:bg-gray-700 rounded-xl p-6 shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4">Casalist</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                        AI-driven contact enrichment platform. 
+                        Techstars Miami '23 alumni.
+                    </p>
+                    <a href="#" class="text-blue-500 hover:text-blue-600">Learn More →</a>
+                </div>
+                <div class="project-card bg-gray-50 dark:bg-gray-700 rounded-xl p-6 shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4">Pupa</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                        Property management platform automating payment reconciliation for LatAm real estate.
+                    </p>
+                    <a href="#" class="text-blue-500 hover:text-blue-600">View Details →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Knowledge Base Preview -->
+    <section id="knowledge" class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-12 text-center gradient-text">Knowledge Base</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold mb-6">AI Implementation</h3>
+                    <ul class="space-y-4">
+                        <li>
+                            <a href="#" class="flex items-center text-gray-700 dark:text-gray-300 hover:text-blue-500">
+                                <span class="mr-2">→</span>
+                                Understanding Large Language Models
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center text-gray-700 dark:text-gray-300 hover:text-blue-500">
+                                <span class="mr-2">→</span>
+                                Prompt Engineering Fundamentals
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center text-gray-700 dark:text-gray-300 hover:text-blue-500">
+                                <span class="mr-2">→</span>
+                                AI Strategy Framework
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold mb-6">Startup Building</h3>
+                    <ul class="space-y-4">
+                        <li>
+                            <a href="#" class="flex items-center text-gray-700 dark:text-gray-300 hover:text-blue-500">
+                                <span class="mr-2">→</span>
+                                From Idea to MVP
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center text-gray-700 dark:text-gray-300 hover:text-blue-500">
+                                <span class="mr-2">→</span>
+                                Customer Discovery Process
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center text-gray-700 dark:text-gray-300 hover:text-blue-500">
+                                <span class="mr-2">→</span>
+                                Pivot or Persevere
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-100 dark:bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-8 gradient-text">Let's Connect</h2>
+            <p class="text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto">
+                I'm always interested in connecting with fellow entrepreneurs, technologists, and business leaders.
+            </p>
+            <a href="#" class="inline-block bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-lg transition-colors">
+                Schedule a Chat
+            </a>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // GSAP Animations
+        gsap.from(".project-card", {
+            duration: 1,
+            y: 50,
+            opacity: 0,
+            stagger: 0.2,
+            ease: "power3.out",
+            scrollTrigger: {
+                trigger: "#projects",
+                start: "top center"
+            }
+        });
+
+        // Dark mode toggle
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        }
+    </script>
+</body>
+</html>
