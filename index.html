@@ -5,39 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name</title>
     <link rel="stylesheet" href="css/style.css">
-    <!-- Adding AOS (Animate On Scroll) library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 <body>
+    <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-content">
-            <h1 data-aos="fade-up">Hello, I'm <span class="highlight">Your Name</span></h1>
-            <p data-aos="fade-up" data-aos-delay="200">Developer • Creator • Innovator</p>
-            <button class="subscribe-btn" data-aos="fade-up" data-aos-delay="400">Subscribe</button>
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Hi, I'm <span class="accent">Your Name</span></h1>
+            <p class="tagline">Turning Ideas into Reality</p>
+            <button class="subscribe-btn">Subscribe</button>
         </div>
         <div class="scroll-indicator">
-            <div class="mouse"></div>
-            <p>Scroll to explore</p>
+            <span>Scroll Down</span>
+            <div class="scroll-arrow"></div>
         </div>
     </section>
 
-    <section class="content-section">
+    <!-- About Section -->
+    <section class="about">
         <div class="container" data-aos="fade-up">
-            <h2>Creating Digital Experiences</h2>
-            <p>Through code and creativity</p>
+            <h2>I Create <span class="accent">Digital Experiences</span></h2>
+            <p>Through code and creativity, I bring ideas to life</p>
         </div>
     </section>
 
-    <section class="content-section dark">
+    <!-- Skills Section -->
+    <section class="skills">
         <div class="container" data-aos="fade-up">
-            <h2>Building the Future</h2>
-            <p>One line of code at a time</p>
+            <div class="skill-cards">
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+                    <h3>Design</h3>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+                    <h3>Develop</h3>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+                    <h3>Deploy</h3>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="content-section">
+    <!-- Contact Section -->
+    <section class="contact">
         <div class="container" data-aos="fade-up">
-            <h2>Let's Connect</h2>
+            <h2>Let's <span class="accent">Connect</span></h2>
             <button class="subscribe-btn">Subscribe</button>
         </div>
     </section>
@@ -45,4 +57,4 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
 </body>
-</html>
+</html> 
